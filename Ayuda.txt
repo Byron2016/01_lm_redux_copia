@@ -1,0 +1,49 @@
+    ***************************************************************
+    **                                                           **
+    **                  01_lm_redux_copia                        **
+    **                                                           **
+    ***************************************************************
+- 01_lm_redux_copia
+	- TITULO: Creando Redux
+	- REFERENCIAS
+		- https://www.youtube.com/watch?v=wg_B65Qt-OQ&list=PL33bS175Qm6eKgcOtuMp87FvTHNnZHx6P&index=3
+		
+	- PASOS
+		- Setup
+			- Ejecutar "npm init"
+			- Ejecutar "npm i @babel/core @babel/preset-env babel-loader webpack webpack-cli webpack-dev-server"
+			- Crear la siguiente estructura
+				- src/index.js
+				- ./index.html
+				
+			- En package.json crear el script:
+				- "start": "webpack-dev-server --mode development --open"
+				
+			- Ejecutar: npm start
+			
+		- Copia Redux
+			- Crear src/redux.js
+			
+				- npm install react react-redux react-router-dom
+				- npm install @material-ui/core @material-ui/icons
+					- Componentes de React para un desarrollo web más rápido y sencillo. 
+					  Construya su propio sistema de diseño, o empiece con Material Design.
+				- Para usar material-ui/core debemos referenciar las
+                  siguientes fuentes en el index.html.
+					- Referencia:
+						- https://material-ui.com/es/getting-started/installation/
+					- <link rel="stylesheet" href="https://fonts.googleapolis.com/css?family=Roboto:300,400,500">
+					- <link rel="stylesheet" href="https://fonts.googleapolis.com/icon?family=Material+Icons">
+			- Crear la siguiente estructura
+				- src/index.js
+				- src/redux
+				- src/components
+				
+				
+		- Integrar React Redux en el proyecto
+			- Entendiendo Redux Referencia
+				- https://www.youtube.com/playlist?list=PL33bS175Qm6eKgcOtuMp87FvTHNnZHx6P
+			- Crear la siguiente estructura
+				- "src/redux/store.js"
+				- "src/redux/reducers"
+				- "src/redux/actions"
