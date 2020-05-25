@@ -39,7 +39,16 @@
 				- src/redux
 				- src/components
 				
-				
+		- Instalar redux
+			- npm i redux
+
+		- Agregar Bootstrap y font-awesome en proyecto
+			- https://getbootstrap.com/docs/4.5/getting-started/introduction/
+				- Emmet bootstrap 4 cheat sheet
+					- https://hackerthemes.com/bootstrap-cheatsheet/
+			- https://fontawesome.bootstrapcheatsheets.com/
+
+
 		- Integrar React Redux en el proyecto
 			- Entendiendo Redux Referencia
 				- https://www.youtube.com/playlist?list=PL33bS175Qm6eKgcOtuMp87FvTHNnZHx6P
