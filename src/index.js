@@ -2,6 +2,20 @@ import store from './redux/store';
 
 const itemListDOM = $('#itemList');
 const itemDOM = $('#item');
+const txtNuevaNota = $('#txtNuevaNota');
+
+txtNuevaNota.keyup((e) => {
+	if (e.keyCode === 13) {
+		const text = txtNuevaNota.val();
+		txtNuevaNota.val('');
+		store.dispatch({
+			type: 'AGREGAR',
+			payload: {
+				text: text,
+			},
+		});
+	}
+});
 
 function actualizarLista(items) {
 	itemListDOM.html('');
@@ -47,11 +61,4 @@ store.subscribe(() => {
 	const state = store.getState();
 
 	actualizarLista(state);
-});
-
-store.dispatch({
-	type: 'AGREGAR',
-	payload: {
-		text: 'hola mundo',
-	},
 });
